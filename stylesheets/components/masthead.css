@@ -1,1 +1,91 @@
-/* Your code here */
+.masthead {
+    display: grid;
+    grid-template-areas: 
+    "menu . login"
+    ". languages ."
+    "date logo today" ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+.masthead__menu_search {
+    align-items: center;
+    display: flex;
+    grid-area: menu;
+    padding: 10px 20px;
+}
+
+.masthead__subscribe_login {
+    grid-area: login;
+    position: relative;
+}
+
+.masthead__language_tabs {
+    display: flex;
+    grid-area: languages;
+    justify-content: center;
+}
+
+.tab_group {
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    border-bottom: none;
+    position: relative;  
+    top: 1px;
+}
+
+.masthead__date {
+    grid-area: date;
+}
+
+.masthead__logo {
+    grid-area: logo;
+}
+
+.masthead__todays_paper {
+    grid-area: today;
+}
+
+.masthead__clickable_icon {
+    font-size: 11px;
+    padding: 7px 9px;
+
+}
+
+.masthead__clickable_icon:hover {
+    background-color: #f7f7f5;;
+}
+
+.masthead__subscribe_login {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.language_tab {
+    color: #6f6f6f;
+    font-size: 10px;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+.masthead__logo {
+    align-items: center;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.masthead__date, .masthead__todays_paper {
+    align-items: flex-end;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    display: flex;  
+    padding: 11px 0;
+}
+
+.masthead__todays_paper {
+    justify-content: flex-end;
+}

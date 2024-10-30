@@ -1,1 +1,9 @@
-/* Your code here */
+.nav_links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav_link {
+    padding: 10px;
+    font-size: 12px;
+}

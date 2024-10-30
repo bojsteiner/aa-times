@@ -6,7 +6,7 @@
   font-size: 12px;
   padding: 0.5em;
   position: absolute;
-  right: 5px;
+  right: 10px;
   top: 2.5em;
   width: 200px;
 }
@@ -34,4 +34,8 @@
 
 .pref__section-link:hover {
   background-color: #dedede;
+}
+
+.pref--hidden {
+  visibility: hidden;
 }
